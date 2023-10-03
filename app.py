@@ -8,7 +8,7 @@ def main():
     st.number_input("number of clusters", min_value=1, max_value=15, step=1, key="num_clusters")
 
     if 'df' not in st.session_state:
-        st.session_state['df'] = pd.read_csv("/Users/gililior/research/py_repos/compare-clusters/meta_filtered.csv")
+        st.session_state['df'] = pd.read_csv("meta_filtered.csv")
 
     df = st.session_state['df']
 
